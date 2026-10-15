@@ -18,7 +18,16 @@ body {
   font-size: 24px;
   font-weight: 500;
   background: yellow;
+  opacity: 0.8;
   display: inline-block;
+  z-index:2;
+}
+
+.needle {
+  color: blue;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
   z-index:2;
 }
 
