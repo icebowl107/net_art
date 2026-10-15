@@ -46,6 +46,7 @@ span {
   
   /* Bind the keyframes animation loop */
   animation: rainbow-move 4s linear infinite;
+  z-index:3;
 }
 
 @keyframes rainbow-move {
