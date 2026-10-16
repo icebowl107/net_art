@@ -51,11 +51,11 @@ body {
     background-color: pink;
 }
 
+.purple {
+    background-color: purple;
+}
+
 .circle {
     border-radius: 50%;
 }
 
-.triangle {
-    background-color: green;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-}
