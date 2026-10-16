@@ -1,0 +1,61 @@
+* { 
+  margin: 0;  
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    overflow: hidden;
+    background-color: #171717;
+}
+
+.pattern {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    padding: 8px;
+}
+
+.shape {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    background-color: #e63946;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.shape:hover {
+    transform: scale(0.9) rotate(8deg);
+    opacity: 0.7;
+}
+
+.red {
+    background-color: #e63946;
+}
+
+.yellow {
+    background-color: #ffbe0b;
+}
+
+.blue {
+    background-color: #3a86ff;
+}
+
+.dark {
+    background-color: #8338ec;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.triangle {
+    background-color: #06d6a0;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
