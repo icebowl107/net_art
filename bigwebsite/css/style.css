@@ -23,14 +23,6 @@ body {
   z-index:2;
 }
 
-.needle {
-  color: blue;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  z-index:2;
-}
-
 span {
   color: blue;
   font-family: serif;
@@ -59,24 +51,5 @@ span {
                -36px 36px #ff5722;
 }
 
-#toggle {
-    display: none;
-  }
-
-  .words {
-    cursor: pointer;
-  }
-
-  .words .needle {
-    display: none;
-  }
-  
-#toggle:checked + .words .hay {
-    display: none;
-  }
-
-  #toggle:checked + .words .needle {
-    display: inline;
-  }
 
   
