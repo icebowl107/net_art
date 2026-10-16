@@ -36,19 +36,19 @@ body {
 }
 
 .red {
-    background-color: #e63946;
+    background-color: red;
 }
 
 .yellow {
-    background-color: #ffbe0b;
+    background-color: yellow;
 }
 
 .blue {
-    background-color: #3a86ff;
+    background-color: blue;
 }
 
-.dark {
-    background-color: #8338ec;
+.purple {
+    background-color: purple;
 }
 
 .circle {
