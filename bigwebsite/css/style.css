@@ -58,3 +58,25 @@ span {
                -32px 32px #f9a825,
                -36px 36px #ff5722;
 }
+
+#toggle {
+    display: none;
+  }
+
+  .words {
+    cursor: pointer;
+  }
+
+  .words .needle {
+    display: none;
+  }
+  
+#toggle:checked + .words .hay {
+    display: none;
+  }
+
+  #toggle:checked + .words .needle {
+    display: inline;
+  }
+
+  
