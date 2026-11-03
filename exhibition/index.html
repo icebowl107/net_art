@@ -7,10 +7,24 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="titlestuff">
-    <h1>Dig/art/al World</h1>
-    <h2>Curated by Daniel Suh</h2>
-    <p>
+
+  <!-- Window 1: Introduction -->
+  <section class="window" id="intro" aria-labelledby="intro-title">
+    <div class="titlebar">
+      <span class="title-text">Dig/art/al World - Netscape</span>
+      <span class="winbtns" aria-hidden="true"><b>_</b><b>□</b><b>✕</b></span>
+    </div>
+    <div class="menubar" aria-hidden="true"><span>File</span><span>Edit</span><span>View</span><span>Go</span><span>Bookmarks</span><span>Help</span></div>
+    <div class="toolbar" aria-hidden="true">
+      <span class="tbtn">◄ Back</span><span class="tbtn">Forward ►</span><span class="tbtn">Reload</span><span class="tbtn">Home</span><span class="tbtn">Stop</span>
+    </div>
+    <div class="addressbar" aria-hidden="true">
+      <label>Location:</label><span class="url">http://www.digartal-world.net/</span>
+    </div>
+    <div class="content titlestuff">
+      <h1 id="intro-title">Dig/art/al World</h1>
+      <h2>Curated by Daniel Suh</h2>
+      <p>
         The internet has become more than just a place to find information. 
         It is a space for creativity, experimentation, and self-expression.
         This exhibition brings together three net artworks that explore the 
@@ -26,45 +40,99 @@
         digital effects to explore online identity and self-presentation in the digital age. 
         Together, these works show how the internet can be both a tool and a 
         subject of artistic expression.
-    </p>
-  </div>
-  
-  <br>
-  <h1>Form Art (1997)</h1>
-  <h2>by Alexei Shulgin</h2>
-  <a href="https://artbase.rhizome.org/Q1248">
-    <img src="images/formart.png">
-  </a>
-  <p>
-    Shulgin looks past the ordinary functionalities of HTML buttons, text boxes, and forms, 
-    transforming these elements into an interactive artwork.
-  </p>
-  
-  <br>
-  
-  <h1>The Most Beautiful Web Page; SOME UNIVERSE (2002)</h1>
-  <h2>by Olia Lialina</h2>
-  <a href="https://art.teleportacia.org/exhibition/stellastar/">
-    <img src="images/someuniverse.webp">
-  </a>
-  <p>
-    A seemingly endless website littered with graphics, motifs, and hidden messages
-    over a starry background make for an unique dive into Lialina's showcase of the 
-    artistic possibilities websites hold.
-  </p>
-  
-  <br>
-  
-  <h1>VVEBCAM (2007)</h1>
-  <h2>by Petra Cortright</h2>    
-  <video controls>
-    <source src="video/vvebcam-2.webm" type="video/webm">
-</video>
-  <p>
-    A playful demonstration of various webcam filters showcasing the artistic self 
-    expression one can achieve through the digital medium.
-  </p>
-  
-  <br>
+      </p>
+    </div>
+    <div class="statusbar" aria-hidden="true"><span>Document: Done</span><span class="grow"></span><span>🌐 Internet zone</span></div>
+  </section>
+
+  <!-- Window 2: Form Art -->
+  <section class="window" id="formart" aria-labelledby="formart-title">
+    <div class="titlebar">
+      <span class="title-text">Form Art (1997) - Netscape</span>
+      <span class="winbtns" aria-hidden="true"><b>_</b><b>□</b><b>✕</b></span>
+    </div>
+    <div class="menubar" aria-hidden="true"><span>File</span><span>Edit</span><span>View</span><span>Go</span><span>Bookmarks</span><span>Help</span></div>
+    <div class="toolbar" aria-hidden="true">
+      <span class="tbtn">◄ Back</span><span class="tbtn">Forward ►</span><span class="tbtn">Reload</span><span class="tbtn">Home</span><span class="tbtn">Stop</span>
+    </div>
+    <div class="addressbar" aria-hidden="true">
+      <label>Location:</label><span class="url">https://artbase.rhizome.org/Q1248</span>
+    </div>
+    <div class="content">
+      <h1 id="formart-title">Form Art (1997)</h1>
+      <h2>by Alexei Shulgin</h2>
+      <a href="https://artbase.rhizome.org/Q1248">
+        <img src="images/formart.png" alt="Screenshot of Form Art by Alexei Shulgin">
+      </a>
+      <p>
+        Shulgin looks past the ordinary functionalities of HTML buttons, text boxes, and forms, 
+        transforming these elements into an interactive artwork.
+      </p>
+    </div>
+    <div class="statusbar" aria-hidden="true"><span>Document: Done</span><span class="grow"></span><span>🌐 Internet zone</span></div>
+  </section>
+
+  <!-- Window 3: SOME UNIVERSE -->
+  <section class="window" id="someuniverse" aria-labelledby="universe-title">
+    <div class="titlebar">
+      <span class="title-text">The Most Beautiful Web Page; SOME UNIVERSE (2002) - Netscape</span>
+      <span class="winbtns" aria-hidden="true"><b>_</b><b>□</b><b>✕</b></span>
+    </div>
+    <div class="menubar" aria-hidden="true"><span>File</span><span>Edit</span><span>View</span><span>Go</span><span>Bookmarks</span><span>Help</span></div>
+    <div class="toolbar" aria-hidden="true">
+      <span class="tbtn">◄ Back</span><span class="tbtn">Forward ►</span><span class="tbtn">Reload</span><span class="tbtn">Home</span><span class="tbtn">Stop</span>
+    </div>
+    <div class="addressbar" aria-hidden="true">
+      <label>Location:</label><span class="url">https://art.teleportacia.org/exhibition/stellastar/</span>
+    </div>
+    <div class="content">
+      <h1 id="universe-title">The Most Beautiful Web Page; SOME UNIVERSE (2002)</h1>
+      <h2>by Olia Lialina</h2>
+      <a href="https://art.teleportacia.org/exhibition/stellastar/">
+        <img src="images/someuniverse.webp" alt="Screenshot of SOME UNIVERSE by Olia Lialina">
+      </a>
+      <p>
+        A seemingly endless website littered with graphics, motifs, and hidden messages
+        over a starry background make for an unique dive into Lialina's showcase of the 
+        artistic possibilities websites hold.
+      </p>
+    </div>
+    <div class="statusbar" aria-hidden="true"><span>Document: Done</span><span class="grow"></span><span>🌐 Internet zone</span></div>
+  </section>
+
+  <!-- Window 4: VVEBCAM -->
+  <section class="window" id="vvebcam" aria-labelledby="vvebcam-title">
+    <div class="titlebar">
+      <span class="title-text">VVEBCAM (2007) - Netscape</span>
+      <span class="winbtns" aria-hidden="true"><b>_</b><b>□</b><b>✕</b></span>
+    </div>
+    <div class="menubar" aria-hidden="true"><span>File</span><span>Edit</span><span>View</span><span>Go</span><span>Bookmarks</span><span>Help</span></div>
+    <div class="toolbar" aria-hidden="true">
+      <span class="tbtn">◄ Back</span><span class="tbtn">Forward ►</span><span class="tbtn">Reload</span><span class="tbtn">Home</span><span class="tbtn">Stop</span>
+    </div>
+    <div class="addressbar" aria-hidden="true">
+      <label>Location:</label><span class="url">http://www.digartal-world.net/vvebcam</span>
+    </div>
+    <div class="content">
+      <h1 id="vvebcam-title">VVEBCAM (2007)</h1>
+      <h2>by Petra Cortright</h2>
+      <video controls>
+        <source src="video/vvebcam-2.webm" type="video/webm">
+      </video>
+      <p>
+        A playful demonstration of various webcam filters showcasing the artistic self 
+        expression one can achieve through the digital medium.
+      </p>
+    </div>
+    <div class="statusbar" aria-hidden="true"><span>Document: Done</span><span class="grow"></span><span>🌐 Internet zone</span></div>
+  </section>
+
+  <nav class="taskbar" aria-label="Exhibition sections">
+    <span class="start">⊞ Start</span>
+    <a href="#intro">Dig/art/al World</a>
+    <a href="#formart">Form Art</a>
+    <a href="#someuniverse">SOME UNIVERSE</a>
+    <a href="#vvebcam">VVEBCAM</a>
+  </nav>
 </body>
 </html>
