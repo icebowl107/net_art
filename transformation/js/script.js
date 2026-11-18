@@ -108,15 +108,19 @@ function updateSky() {
     }
 }
 
-// Mouse click plants a flower
+// Mouse click plants a flower in a random position
 document.addEventListener("click", function(event) {
 
     // Stop flowers from disappearing
     clearTimeout(idleTimer);
     clearInterval(removalTimer);
 
-    // Plant at the mouse position
-    plantFlower(event.clientX, event.clientY);
+    // Generate random screen coordinates
+    const x = Math.random() * window.innerWidth;
+    const y = Math.random() * window.innerHeight;
+
+    // Plant flower at random position
+    plantFlower(x, y);
 
     // Wait until the user stops clicking
     idleTimer = setTimeout(function() {
@@ -126,6 +130,7 @@ document.addEventListener("click", function(event) {
     }, 3000);
 
 });
+
 
 // Remove flowers one by one
 function startRemovingFlowers() {
