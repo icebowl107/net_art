@@ -1,0 +1,104 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    transition: background-color 1.5s ease;
+    cursor: crosshair;
+}
+
+/* Flower garden */
+
+#garden {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+/* Instructions */
+
+.message {
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-size: 13px;
+    letter-spacing: 4px;
+    opacity: 0.6;
+    pointer-events: none;
+    transition: opacity 1s;
+}
+
+/* Pixel flower */
+
+.flower {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(7, 5px);
+    grid-template-rows: repeat(9, 5px);
+    width: 35px;
+    height: 45px;
+    transform: translate(-50%, -50%);
+    animation: bloom 0.4s steps(3) forwards;
+    image-rendering: pixelated;
+}
+
+.pixel {
+    width: 5px;
+    height: 5px;
+}
+
+.petal {
+    background: var(--petal-color);
+}
+
+.center {
+    background: #ffe45c;
+}
+
+.stem {
+    background: #398447;
+}
+
+.leaf {
+    background: #67b85a;
+}
+
+/* Flower growing animation */
+
+@keyframes bloom {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    70% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* Disappearing flowers */
+
+.flower.disappearing {
+    animation: disappear 0.5s steps(4) forwards;
+}
+
+@keyframes disappear {
+    to {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+}
